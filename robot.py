@@ -10,8 +10,10 @@ class Robot:
         self.active_weapon_index = 0
 
     def attack(self, dinosaur) -> None:
+        print(f"{self.name} is attacking {dinosaur.name}")
         self.choose_weapon()
-        print(f"The Robot {self.name} is attacking the Dinosaur {dinosaur.name} with {self.weapon_list[self.active_weapon_index].name} which has {self.weapon_list[self.active_weapon_index].attack_power} attack points")
+        print("")
+        print(f"The Robot {self.name} is attacked the Dinosaur {dinosaur.name} with {self.weapon_list[self.active_weapon_index].name} which has {self.weapon_list[self.active_weapon_index].attack_power} attack points")
         dinosaur.health -= self.weapon_list[self.active_weapon_index].attack_power
         if dinosaur.health > 0:
             print(f"The Dinosaur {dinosaur.name} has {dinosaur.health} HP remaining")
