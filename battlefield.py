@@ -7,14 +7,14 @@ class Battlefield:
         self.robot = Robot("Wall-E")
         self.dinosaur = Dinosaur("T-Rex", 10)
 
-    def run_game() -> None:
+    def run_game(self) -> None:
         pass
 
-    def display_welcome() -> None:
-        pass
+    def display_welcome(self) -> None:
+        print(f"The battle has begun versus the Robot {self.robot.name} and Dinosaur {self.dinosaur.name}")
     
-    def battle_phase() -> None:
+    def battle_phase(self) -> None:
         pass
 
-    def display_winner() -> None:
+    def display_winner(self) -> None:
         pass
