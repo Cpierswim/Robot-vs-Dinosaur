@@ -1,5 +1,5 @@
-from robot import *
-from dinosaur import *
+from robot import Robot
+from dinosaur import Dinosaur
 
 
 class Battlefield:
@@ -15,6 +15,9 @@ class Battlefield:
 
     def display_welcome(self) -> None:
         print(f"The battle has begun versus the Robot {self.robot.name} and Dinosaur {self.dinosaur.name}")
+        print(f"The Robot {self.robot.name} has {self.robot.health} Health Points and will attack with {self.robot.active_weapon.name} which has {self.robot.active_weapon.attack_power} attack points")
+        print(f"The Dinosaur {self.dinosaur.name} has {self.dinosaur.health} Health Points and will attach with {self.dinosaur.attack_power} Attack Points")
+        print("")
     
     def battle_phase(self) -> None:
         self.robot.attack(self.dinosaur)
