@@ -1,5 +1,5 @@
-from weapon import Weapon
-from dinosaur import Dinosaur
+from weapon import *
+from dinosaur import *
 
 class Robot:
     def __init__(self, name: str) -> None:

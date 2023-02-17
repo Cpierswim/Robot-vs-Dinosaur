@@ -1,4 +1,4 @@
-from robot import Robot
+from robot import *
 
 class Dinosaur:
     def __init__(self, name: str, attack_power: int) -> None:
